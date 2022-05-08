@@ -1,0 +1,84 @@
+.services__container{
+  margin: 0 235px;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.services__title{
+  font-weight: bold;
+  font-size: 40px;
+  color: $black;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.services__subtitle{
+  font-size: 20px;
+  font-family: "RobotoSlab";
+  color: $gray;
+  margin-bottom: 85px;
+}
+
+.services__cards{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.service__card{
+  width: 270px;
+  text-align: center;
+}
+
+.service__card__title{
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $black;
+  margin-bottom: 20px;
+}
+
+.service__card__desc{
+  font-size: 14px;
+  font-family: "RobotoSlab";
+  color: $gray;
+}
+
+.service__card__image{
+  height: 52px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 1070px){
+  .services__cards{
+    flex-direction: column;
+    align-items: center;
+  }
+  .service__card{
+    margin-bottom: 30px;
+    margin-right: 0;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+}
+@media (max-width: 800px){
+  .services__container{
+    margin: 0 65px;
+  }
+}
+@media (max-width: 650px){
+  .services__container{
+    margin: 0 25px;
+  }
+}
+@media (max-width: 380px){
+  .services__title{
+    font-size: 30px;
+  }
+  .services__subtitle{
+    font-size: 17px;
+  }
+}

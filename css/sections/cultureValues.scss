@@ -1,0 +1,150 @@
+.cultureValues__container{
+  margin: 0 230px;
+  padding: 100px 0;
+  text-align: center;
+}
+.cultureValues{
+  background-color: $lightgray;
+}
+.cultureValues__title{
+  font-size: 40px;
+  color: $black;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.cultureValues__subtitle{
+  font-size: 20px;
+  color: $gray;
+  font-family: "RobotoSlab";
+  margin-bottom: 80px;
+}
+
+.cultureValues__list{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cultureValues__list-item{
+  width: 280px;
+  margin-right: 30px;
+  &:last-child{
+    margin-right: 0;
+  }
+}
+
+.cultureValues__list-item-img{
+  padding: 45px;
+  background-repeat: no-repeat;
+  border: 2px solid $gray;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 25px;
+  background-position: center;
+}
+.music{
+  background-image: url(../img/Icon-Music.png);
+  position: relative;
+  &::after{
+    content: "";
+    height: 2px;
+    background-color: $gray;
+    width: 120%;
+    position: absolute;
+    top: calc(50% - 1px);
+    left: 145%;
+  }
+}
+.graph{
+  background-image: url(../img/Icon-Graph.png);
+  position: relative;
+  &::before{
+    content: "";
+    height: 2px;
+    background-color: $gray;
+    width: 125%;
+    position: absolute;
+    top: calc(50% - 1px);
+    right: 145%;
+  }
+  &::after{
+    content: "";
+    height: 2px;
+    background-color: $gray;
+    width: 125%;
+    position: absolute;
+    top: calc(50% - 1px);
+    left: 145%;
+  }
+}
+.star{
+  background-image: url(../img/Icon-Star.png);
+  position: relative;
+  &::before{
+    content: "";
+    height: 2px;
+    background-color: $gray;
+    width: 125%;
+    position: absolute;
+    top: calc(50% - 1px);
+    right: 145%;
+  }
+}
+.cultureValues__list-item-title{
+  font-size: 18px;
+  color: $black;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.cultureValues__list-item-subtitle{
+  font-size: 16px;
+  font-family: "RobotoSlab";
+  color: $gray;
+}
+
+@media (max-width: 1180px){
+  .cultureValues__list-item-img{
+    &::after{
+      display: none;
+    }
+    &::before{
+      display: none;
+    }
+  }
+}
+@media (max-width: 1100px){
+  .cultureValues__list{
+    flex-direction: column;
+  }
+  .cultureValues__list-item{
+    margin-right: 0;
+    margin-bottom: 30px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+}
+@media (max-width: 720px){
+  .cultureValues__container{
+    margin: 0 100px;
+  }
+}
+@media (max-width: 435px){
+  .cultureValues__container{
+    margin: 0 50px;
+  }
+  .cultureValues__title{
+    font-size: 30px;
+  }
+  .cultureValues__subtitle{
+    font-size: 17px;
+  }
+  .cultureValues__list-item-img{
+    transform: scale(.9);
+  }
+}

@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+$gray: #777777;
+$green: #7cc576;
+$black: #222222;
+$lightgray: #f9f9f9;
+
+@import "sections/header";
+@import "settings/adjustments.scss";
+@import "sections/intro.scss";
+@import "sections/services.scss";
+@import "sections/learnMore.scss";
+@import "sections/latestProject.scss";
+@import "sections/cultureValues.scss";
+@import "sections/clients.scss";
+@import "sections/offer.scss";
+@import "sections/logos.scss";
+@import "sections/information.scss";
+@import "sections/footer.scss";

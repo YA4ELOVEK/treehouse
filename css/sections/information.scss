@@ -1,0 +1,139 @@
+.information{
+  background-color: $black;
+  color: #fff;
+}
+
+.information__container{
+  margin: 0 220px;
+  padding: 60px 0;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: top;
+  justify-content: space-between;
+}
+
+.info{
+  width: 33%;
+}
+
+.information__contact-title{
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.information__contact-list-item{
+  margin-bottom: 20px;
+  padding-left: 40px;
+  background: top left no-repeat;
+  position: relative;
+  font-size: 17px;
+  font-family: "RobotoSlab";
+  color: #ececec;
+}
+
+
+.location::before{
+  content: "";
+  background: url(../img/location.png) no-repeat;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.phone__number::before{
+  background: url(../img/footer_mobile.png) no-repeat left center;
+  position: absolute;
+  content: "";
+  top: -4px;
+  bottom: -8px;
+  left: 0;
+  right: 0;
+}
+.email::before{
+  background: url(../img/email.png) no-repeat left center;
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: -2px;
+  right: 0;
+}
+
+.news::before{
+  background: url(../img/News_Icon.png) no-repeat left center;
+  position: absolute;
+  content: "";
+  top: -2px;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+}
+
+.image::before{
+  background: url(../img/Photo_Icon.png) no-repeat left center;
+  position: absolute;
+  content: "";
+  top: -3px;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+}
+.media::before{
+  background: url(../img/Media_Icon.png) no-repeat left center;
+  position: absolute;
+  content: "";
+  top: -1px;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+}
+.twit::before{
+  background: url(../img/Twitter_Icon.png) no-repeat left top;
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.hashtag{
+  font-weight: bold;
+  font-size: 17px;
+  font-family: "RobotoSlab";
+  margin-bottom: 5px;
+}
+
+.date{
+  font-size: 14px;
+  font-family: "RobotoSlab";
+}
+
+@media (max-width: 1050px){
+  .information__container{
+    flex-direction: column;
+    align-items: center;
+  }
+  .info{
+    width: 100%;
+    margin-bottom: 30px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+}
+@media (max-width: 700px){
+  .information__container{
+    margin: 0 100px;
+  }
+}
+@media (max-width: 430px){
+  .information__container{
+    margin: 0 50px;
+  }
+}

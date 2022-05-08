@@ -1,0 +1,50 @@
+.offer{
+  background-color: $green;
+}
+.offer__container{
+  margin: 0 230px;
+  padding: 70px 0;
+  text-align: center;
+}
+
+.offer__title{
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.offer__button{
+  padding: 15px;
+  width: 180px;
+  border: 3px solid #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 10px;
+  transition: .2s ease;
+  &:hover{
+    background-color: white;
+    color: $green;
+  }
+}
+
+@media (max-width: 1000px){
+  .offer__container{
+    margin: 0 100px;
+  }
+}
+@media (max-width: 450px){
+  .offer__title{
+    font-size: 30px;
+  }
+  .offer__button{
+    transform: scale(.8);
+  }
+  .offer__container{
+    margin: 0 50px;
+  }
+}
