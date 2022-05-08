@@ -562,11 +562,12 @@ a {
   right: -25px;
 }
 
-@media (max-width: 1100px) {
+@media (min-width: 1230px) {
   .latestProject {
     background: white;
   }
-
+}
+@media (max-width: 1100px) {
   .latestProject__right {
     width: 0;
   }
